@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>job Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <style>
+      button {
+        padding: 10px 40px;
+        border-radius: 10px;
+      }
+
+      button:hover {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="msform">
+      <!-- progressbar -->
+
+      <!-- fieldsets -->
+      <fieldset>
+        <h2 class="fs-title">Login</h2>
+        <!-- <h3 class="fs-subtitle">Register</h3> -->
+        <input type="text" name="email" placeholder="Email" />
+        <input type="password" name="pass" placeholder="Password" />
+
+        <br />
+        <h3>Or</h3>
+        <br />
+        <button>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-google"
+              viewBox="0 0 16 16"
+              style="margin-bottom: -3px; margin-right: 5px"
+            >
+              <path
+                d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"
+              /></svg
+          ></span>
+          Google
+        </button>
+        <br />
+        <a href="/jobfinderportal-master/index.html">
+          <input
+            type="button"
+            name="next"
+            class="next action-button"
+            value="Submit"
+        /></a>
+        <br /><br />
+        <h4>
+          Don't have a account
+          <a href="index.html"
+            >Sign in
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-bar-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"
+                /></svg></span
+          ></a>
+        </h4>
+      </fieldset>
+    </form>
+  </body>
+</html>

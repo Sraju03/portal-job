@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Job board HTML-5 Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.ico"
+    />
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/flaticon.css" />
+    <link rel="stylesheet" href="assets/css/price_rangs.css" />
+    <link rel="stylesheet" href="assets/css/slicknav.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/themify-icons.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .dropdown-list {
+        display: none;
+        /* position: absolute; */
+        /* z-index: 1; */
+        max-height: 150px;
+        overflow-y: auto;
+        border: 1px solid #544f4f;
+        background-color: white;
+        width: 100%;
+      }
+      .dropdown-list div {
+        padding: 8px;
+        cursor: pointer;
+      }
+      .dropdown-list div:hover {
+        background-color: #b6b4b4;
+      }
+      .dropdown-input {
+        width: 200px;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="assets/css/own.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+      <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+          <div class="preloader-circle"></div>
+          <div class="preloader-img pere-text">
+            <img
+              src="../jobfinderportal-master/assets/img/logo/logo.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img
+            src="../jobfinderportal-master/assets/img/logo/logo.png"
+            alt="Logo"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="job_listing.html">Find a Job</a></li>
+            <!-- <li><a href="#">Practices</a></li> -->
+            <li><a href="blog.html">Pathfinder</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="profile">
+          <img
+            src="..\jobfinderportal-master\assets\img\He was _ De foto a caricatura, Fotos de alas de ángel, Fotos de perfil.jpeg"
+            alt="Profile"
+            id="profileIcon"
+          />
+        </div>
+      </div>
+    </header>
+
+    <div class="profile-popup" id="profilePopup">
+      <div class="profile-content">
+        <span class="close">&times;</span>
+        <div class="profile-header">
+          <img
+            src="..\jobfinderportal-master\assets\img\He was _ De foto a caricatura, Fotos de alas de ángel, Fotos de perfil.jpeg"
+            alt="Profile Picture"
+            class="profile-picture"
+          />
+          <h2>raju s</h2>
+          <p>B.Ed Education at Jeppiaar Engineering College, Chennai</p>
+          <a href="#">View & Update Profile</a>
+        </div>
+        <div class="profile-performance">
+          <div>
+            <h3>0</h3>
+            <p>Search Appearances</p>
+          </div>
+          <div>
+            <h3>0</h3>
+            <p>Recruiter Actions</p>
+          </div>
+        </div>
+        <ul class="profile-menu">
+          <li><a href="#">Career guidance</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="../profile.html">Edit profile</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Profile Slider -->
+
+    <main>
+      <!-- slider Area Start-->
+      <section
+        class="min-h-screen bg-gray-900 text-center py-20 px-8 xl:px-0 flex flex-col justify-center"
+      >
+        <span
+          class="text-gray-400 text-lg max-w-lg mx-auto mb-2 capitalize flex items-center"
+          >what we're offering
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="text-indigo-600 ml-3 w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+        </span>
+        <h1
+          class="text-white text-4xl md:text-5xl xl:text-6xl font-semibold max-w-3xl mx-auto mb-16 leading-snug"
+        >
+          Services Built Specifically for your Business
+        </h1>
+        <div
+          class="grid-offer text-left grid sm:grid-cols-2 md:grid-cols-2 gap-5 max-w-5xl mx-auto"
+        >
+          <div class="card bg-gray-800 p-10 relative">
+            <div class="circle"></div>
+            <div class="relative lg:pr-52">
+              <h2 class="capitalize text-white mb-4 text-2xl xl:text-3xl">
+                uI/uX <br />
+                creative design
+              </h2>
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames.
+              </p>
+            </div>
+            <div class="icon"></div>
+          </div>
+          <div class="card bg-gray-800 p-10 relative">
+            <div class="circle"></div>
+            <div class="relative lg:pl-48">
+              <h2 class="capitalize text-white mb-4 text-2xl xl:text-3xl">
+                visual <br />
+                graphic design
+              </h2>
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-gray-800 p-10 relative">
+            <div class="circle"></div>
+            <div class="relative lg:pr-44">
+              <h2 class="capitalize text-white mb-4 text-2xl xl:text-3xl">
+                strategy & <br />digital marketing
+              </h2>
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames.
+              </p>
+            </div>
+          </div>
+          <div class="card bg-gray-800 p-10 relative">
+            <div class="circle"></div>
+            <div class="relative lg:pl-48">
+              <h2 class="capitalize text-white mb-4 text-2xl xl:text-3xl">
+                effective<br />
+                business growth
+              </h2>
+              <p class="text-gray-400">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Pellentesque habitant morbi tristique senectus et netus et
+                malesuada fames.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- slider Area End-->
+      <div class="search-container">
+        <!-- Job Type Dropdown -->
+        <div class="dropdown-container">
+          <input
+            type="text"
+            id="dropdown-input-job"
+            class="dropdown-input"
+            placeholder="Select job type"
+            onclick="toggleDropdown(event, 'dropdown-job')"
+            onkeyup="filterFunction('dropdown-job')"
+          />
+          <div id="dropdown-job" class="dropdown-list">
+            <div onclick="selectOption('Full-time', 'dropdown-input-job')">
+              Full-time
+            </div>
+            <div onclick="selectOption('Part-time', 'dropdown-input-job')">
+              Part-time
+            </div>
+            <div onclick="selectOption('Internship', 'dropdown-input-job')">
+              Internship
+            </div>
+            <div onclick="selectOption('Freelance', 'dropdown-input-job')">
+              Freelance
+            </div>
+            <!-- Add more job types as needed -->
+          </div>
+        </div>
+
+        <!-- District Dropdown -->
+        <div class="dropdown-container">
+          <input
+            type="text"
+            id="dropdown-input-district"
+            class="dropdown-input"
+            placeholder="Select district"
+            onclick="toggleDropdown(event, 'dropdown-district')"
+            onkeyup="filterFunction('dropdown-district')"
+          />
+          <div id="dropdown-district" class="dropdown-list">
+            <div onclick="selectOption('Ariyalur', 'dropdown-input-district')">
+              Ariyalur
+            </div>
+            <div
+              onclick="selectOption('Chengalpattu', 'dropdown-input-district')"
+            >
+              Chengalpattu
+            </div>
+            <div onclick="selectOption('Chennai', 'dropdown-input-district')">
+              Chennai
+            </div>
+            <div
+              onclick="selectOption('Coimbatore', 'dropdown-input-district')"
+            >
+              Coimbatore
+            </div>
+            <div onclick="selectOption('Cuddalore', 'dropdown-input-district')">
+              Cuddalore
+            </div>
+            <div
+              onclick="selectOption('Dharmapuri', 'dropdown-input-district')"
+            >
+              Dharmapuri
+            </div>
+            <div onclick="selectOption('Dindigul', 'dropdown-input-district')">
+              Dindigul
+            </div>
+            <div onclick="selectOption('Erode', 'dropdown-input-district')">
+              Erode
+            </div>
+            <div
+              onclick="selectOption('Kallakurichi', 'dropdown-input-district')"
+            >
+              Kallakurichi
+            </div>
+            <div
+              onclick="selectOption('Kancheepuram', 'dropdown-input-district')"
+            >
+              Kancheepuram
+            </div>
+            <div onclick="selectOption('Karur', 'dropdown-input-district')">
+              Karur
+            </div>
+            <div
+              onclick="selectOption('Krishnagiri', 'dropdown-input-district')"
+            >
+              Krishnagiri
+            </div>
+            <div onclick="selectOption('Madurai', 'dropdown-input-district')">
+              Madurai
+            </div>
+            <div
+              onclick="selectOption('Mayiladuthurai', 'dropdown-input-district')"
+            >
+              Mayiladuthurai
+            </div>
+            <div
+              onclick="selectOption('Nagapattinam', 'dropdown-input-district')"
+            >
+              Nagapattinam
+            </div>
+            <div onclick="selectOption('Namakkal', 'dropdown-input-district')">
+              Namakkal
+            </div>
+            <div onclick="selectOption('Nilgiris', 'dropdown-input-district')">
+              Nilgiris
+            </div>
+            <div
+              onclick="selectOption('Perambalur', 'dropdown-input-district')"
+            >
+              Perambalur
+            </div>
+            <div
+              onclick="selectOption('Pudukkottai', 'dropdown-input-district')"
+            >
+              Pudukkottai
+            </div>
+            <div
+              onclick="selectOption('Ramanathapuram', 'dropdown-input-district')"
+            >
+              Ramanathapuram
+            </div>
+            <div onclick="selectOption('Ranipet', 'dropdown-input-district')">
+              Ranipet
+            </div>
+            <div onclick="selectOption('Salem', 'dropdown-input-district')">
+              Salem
+            </div>
+            <div onclick="selectOption('Sivaganga', 'dropdown-input-district')">
+              Sivaganga
+            </div>
+            <div onclick="selectOption('Tenkasi', 'dropdown-input-district')">
+              Tenkasi
+            </div>
+            <div onclick="selectOption('Thanjavur', 'dropdown-input-district')">
+              Thanjavur
+            </div>
+            <div onclick="selectOption('Theni', 'dropdown-input-district')">
+              Theni
+            </div>
+            <div
+              onclick="selectOption('Thoothukudi', 'dropdown-input-district')"
+            >
+              Thoothukudi
+            </div>
+            <div
+              onclick="selectOption('Tiruchirappalli', 'dropdown-input-district')"
+            >
+              Tiruchirappalli
+            </div>
+            <div
+              onclick="selectOption('Tirunelveli', 'dropdown-input-district')"
+            >
+              Tirunelveli
+            </div>
+            <div
+              onclick="selectOption('Tirupathur', 'dropdown-input-district')"
+            >
+              Tirupathur
+            </div>
+            <div onclick="selectOption('Tiruppur', 'dropdown-input-district')">
+              Tiruppur
+            </div>
+            <div
+              onclick="selectOption('Tiruvallur', 'dropdown-input-district')"
+            >
+              Tiruvallur
+            </div>
+            <div
+              onclick="selectOption('Tiruvannamalai', 'dropdown-input-district')"
+            >
+              Tiruvannamalai
+            </div>
+            <div onclick="selectOption('Tiruvarur', 'dropdown-input-district')">
+              Tiruvarur
+            </div>
+            <div onclick="selectOption('Vellore', 'dropdown-input-district')">
+              Vellore
+            </div>
+            <div
+              onclick="selectOption('Viluppuram', 'dropdown-input-district')"
+            >
+              Viluppuram
+            </div>
+            <div
+              onclick="selectOption('Virudhunagar', 'dropdown-input-district')"
+            >
+              Virudhunagar
+            </div>
+
+            <!-- Add more districts as needed -->
+          </div>
+        </div>
+
+        <!-- Keyword and Location Input -->
+        <input type="text" placeholder="Enter keyword " class="search-input" />
+        <input type="text" placeholder=" Designation " class="search-input" />
+        <!-- <input type="text" placeholder="Companies " class="search-input" /> -->
+        <!-- Search Button -->
+        <a href="..\jobfinderportal-master\job_listing.html"
+          ><button class="search-button">
+            <span class="search-icon">&#128269;</span> Search
+          </button></a
+        >
+      </div>
+
+      <!-- Online CV Area Start -->
+      <div
+        class="online-cv cv-bg section-overly pt-90 pb-120"
+        data-background="assets/img/gallery/cv_bg.jpg"
+      >
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+              <div class="cv-caption text-center">
+                <p class="pera1">FEATURED TOURS Packages</p>
+                <p class="pera2">Make a Difference with Your Online Resume!</p>
+                <a href="#" class="border-btn2 border-btn4">Upload your cv</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Online CV Area End-->
+      <!-- Featured_job_start -->
+      <section class="featured-job-area feature-padding">
+        <div class="container">
+          <!-- Section Tittle -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-tittle text-center">
+                <span>Recent Job</span>
+                <h2>Featured Jobs</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-xl-10">
+              <!-- single-job-content -->
+              <div class="single-job-items mb-30">
+                <div class="job-items">
+                  <div class="company-img">
+                    <a href="job_details.html"
+                      ><img src="assets/img/icon/job-list1.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="job-tittle">
+                    <a href="job_details.html"><h4>Digital Marketer</h4></a>
+                    <ul>
+                      <li>Creative Agency</li>
+                      <li>
+                        <i class="fas fa-map-marker-alt"></i>Athens, Greece
+                      </li>
+                      <li>$3500 - $4000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="items-link f-right">
+                  <a href="job_details.html">Full Time</a>
+                  <span>7 hours ago</span>
+                </div>
+              </div>
+              <!-- single-job-content -->
+              <div class="single-job-items mb-30">
+                <div class="job-items">
+                  <div class="company-img">
+                    <a href="job_details.html"
+                      ><img src="assets/img/icon/job-list2.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="job-tittle">
+                    <a href="job_details.html"><h4>Digital Marketer</h4></a>
+                    <ul>
+                      <li>Creative Agency</li>
+                      <li>
+                        <i class="fas fa-map-marker-alt"></i>Athens, Greece
+                      </li>
+                      <li>$3500 - $4000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="items-link f-right">
+                  <a href="job_details.html">Full Time</a>
+                  <span>7 hours ago</span>
+                </div>
+              </div>
+              <!-- single-job-content -->
+              <div class="single-job-items mb-30">
+                <div class="job-items">
+                  <div class="company-img">
+                    <a href="job_details.html"
+                      ><img src="assets/img/icon/job-list3.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="job-tittle">
+                    <a href="job_details.html"><h4>Digital Marketer</h4></a>
+                    <ul>
+                      <li>Creative Agency</li>
+                      <li>
+                        <i class="fas fa-map-marker-alt"></i>Athens, Greece
+                      </li>
+                      <li>$3500 - $4000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="items-link f-right">
+                  <a href="job_details.html">Full Time</a>
+                  <span>7 hours ago</span>
+                </div>
+              </div>
+              <!-- single-job-content -->
+              <div class="single-job-items mb-30">
+                <div class="job-items">
+                  <div class="company-img">
+                    <a href="job_details.html"
+                      ><img src="assets/img/icon/job-list4.png" alt=""
+                    /></a>
+                  </div>
+                  <div class="job-tittle">
+                    <a href="job_details.html"><h4>Digital Marketer</h4></a>
+                    <ul>
+                      <li>Creative Agency</li>
+                      <li>
+                        <i class="fas fa-map-marker-alt"></i>Athens, Greece
+                      </li>
+                      <li>$3500 - $4000</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="items-link f-right">
+                  <a href="job_details.html">Full Time</a>
+                  <span>7 hours ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured_job_end -->
+      <!-- How  Apply Process Start-->
+      <div
+        class="apply-process-area apply-bg pt-150 pb-150"
+        data-background="assets/img/gallery/how-applybg.png"
+      >
+        <div class="container">
+          <!-- Section Tittle -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-tittle white-text text-center">
+                <span>Apply process</span>
+                <h2>How it works</h2>
+              </div>
+            </div>
+          </div>
+          <!-- Apply Process Caption -->
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="single-process text-center mb-30">
+                <div class="process-ion">
+                  <span class="flaticon-search"></span>
+                </div>
+                <div class="process-cap">
+                  <h5>1. Search a job</h5>
+                  <p>
+                    Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod
+                    tempor incididunt ut laborea.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="single-process text-center mb-30">
+                <div class="process-ion">
+                  <span class="flaticon-curriculum-vitae"></span>
+                </div>
+                <div class="process-cap">
+                  <h5>2. Apply for job</h5>
+                  <p>
+                    Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod
+                    tempor incididunt ut laborea.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="single-process text-center mb-30">
+                <div class="process-ion">
+                  <span class="flaticon-tour"></span>
+                </div>
+                <div class="process-cap">
+                  <h5>3. Get your job</h5>
+                  <p>
+                    Sorem spsum dolor sit amsectetur adipisclit, seddo eiusmod
+                    tempor incididunt ut laborea.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- How  Apply Process End-->
+
+      <!-- Blog Area Start -->
+      <div class="home-blog-area blog-h-padding">
+        <div class="container">
+          <!-- Section Tittle -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="section-tittle text-center">
+                <span>Our latest blog</span>
+                <h2>Our recent news</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-6">
+              <div class="home-blog-single mb-30">
+                <div class="blog-img-cap">
+                  <div class="blog-img">
+                    <img src="assets/img/blog/home-blog1.jpg" alt="" />
+                    <!-- Blog date -->
+                    <div class="blog-date text-center">
+                      <span>24</span>
+                      <p>Now</p>
+                    </div>
+                  </div>
+                  <div class="blog-cap">
+                    <p>| Properties</p>
+                    <h3>
+                      <a href="single-blog.html"
+                        >Footprints in Time is perfect House in Kurashiki</a
+                      >
+                    </h3>
+                    <a href="#" class="more-btn">Read more »</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-6">
+              <div class="home-blog-single mb-30">
+                <div class="blog-img-cap">
+                  <div class="blog-img">
+                    <img src="assets/img/blog/home-blog2.jpg" alt="" />
+                    <!-- Blog date -->
+                    <div class="blog-date text-center">
+                      <span>24</span>
+                      <p>Now</p>
+                    </div>
+                  </div>
+                  <div class="blog-cap">
+                    <p>| Properties</p>
+                    <h3>
+                      <a href="single-blog.html"
+                        >Footprints in Time is perfect House in Kurashiki</a
+                      >
+                    </h3>
+                    <a href="#" class="more-btn">Read more »</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Blog Area End -->
+    </main>
+
+    <footer>
+      <!-- Footer Start-->
+      <div class="footer-area footer-bg footer-padding">
+        <div class="container">
+          <div class="row d-flex justify-content-between">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+              <div class="single-footer-caption mb-50">
+                <div class="single-footer-caption mb-30">
+                  <div class="footer-tittle">
+                    <h4>About Us</h4>
+                    <div class="footer-pera">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maiores, quas dignissimos pariatur saepe dolorem dolores
+                        et, quos suscipit alias, eius tempore.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+              <div class="single-footer-caption mb-50">
+                <div class="footer-tittle">
+                  <h4>Contact Info</h4>
+                  <ul>
+                    <li>
+                      <p>Address :Your address goes here, your demo address.</p>
+                    </li>
+                    <li><a href="#">Phone : +8880 44338899</a></li>
+                    <li><a href="#">Email : info@colorlib.com</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+              <div class="single-footer-caption mb-50">
+                <div class="footer-tittle">
+                  <h4>Important Link</h4>
+                  <ul>
+                    <li><a href="#"> View Project</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">Proparties</a></li>
+                    <li><a href="#">Support</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+              <div class="single-footer-caption mb-50">
+                <div class="footer-tittle">
+                  <h4>Newsletter</h4>
+                  <div class="footer-pera footer-pera2">
+                    <p>
+                      Heaven fruitful doesn't over lesser in days. Appear
+                      creeping.
+                    </p>
+                  </div>
+                  <!-- Form -->
+                  <div class="footer-form">
+                    <div id="mc_embed_signup">
+                      <form
+                        target="_blank"
+                        action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                        method="get"
+                        class="subscribe_form relative mail_part"
+                      >
+                        <input
+                          type="email"
+                          name="email"
+                          id="newsletter-form-email"
+                          placeholder="Email Address"
+                          class="placeholder hide-on-focus"
+                          onfocus="this.placeholder = ''"
+                          onblur="this.placeholder = ' Email Address '"
+                        />
+                        <div class="form-icon">
+                          <button
+                            type="submit"
+                            name="submit"
+                            id="newsletter-submit"
+                            class="email_icon newsletter-submit button-contactForm"
+                          >
+                            <img src="assets/img/icon/form.png" alt="" />
+                          </button>
+                        </div>
+                        <div class="mt-10 info"></div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="row footer-wejed justify-content-between">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+              <!-- logo -->
+              <div class="footer-logo mb-20">
+                <a href="index.html"
+                  ><img src="assets/img/logo/logo2_footer.png" alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+              <div class="footer-tittle-bottom">
+                <span>5000+</span>
+                <p>Talented Hunter</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+              <div class="footer-tittle-bottom">
+                <span>451</span>
+                <p>Talented Hunter</p>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+              <!-- Footer Bottom Tittle -->
+              <div class="footer-tittle-bottom">
+                <span>568</span>
+                <p>Talented Hunter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer-bottom area -->
+      <div class="footer-bottom-area footer-bg">
+        <div class="container">
+          <div class="footer-border">
+            <div class="row d-flex justify-content-between align-items-center">
+              <div class="col-xl-10 col-lg-10">
+                <div class="footer-copy-right">
+                  <p>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved | This template is made with
+                    <i class="fa fa-heart" aria-hidden="true"></i> by
+                    <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                  </p>
+                </div>
+              </div>
+              <div class="col-xl-2 col-lg-2">
+                <div class="footer-social f-right">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fas fa-globe"></i></a>
+                  <a href="#"><i class="fab fa-behance"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer End-->
+    </footer>
+
+    <!-- JS here -->
+    <script>
+      document
+        .getElementById("profileIcon")
+        .addEventListener("click", function () {
+          document.getElementById("profilePopup").style.display = "flex";
+        });
+
+      document.querySelector(".close").addEventListener("click", function () {
+        document.getElementById("profilePopup").style.display = "none";
+      });
+
+      window.addEventListener("click", function (event) {
+        if (event.target === document.getElementById("profilePopup")) {
+          document.getElementById("profilePopup").style.display = "none";
+        }
+      });
+    </script>
+    <script>
+      // Function to toggle the dropdown visibility
+      function toggleDropdown(event, dropdownId) {
+        event.stopPropagation(); // Prevents the event from bubbling up to the window click event
+        const dropdown = document.getElementById(dropdownId);
+        const isVisible = dropdown.style.display === "block";
+
+        // Close all dropdowns
+        closeAllDropdowns();
+
+        // Toggle the clicked dropdown
+        if (!isVisible) {
+          dropdown.style.display = "block";
+        }
+      }
+
+      // Function to close all dropdowns
+      function closeAllDropdowns() {
+        const dropdowns = document.querySelectorAll(".dropdown-list");
+        dropdowns.forEach((dropdown) => {
+          dropdown.style.display = "none";
+        });
+      }
+
+      // Event listener to close dropdowns when clicking outside
+      window.onclick = function () {
+        closeAllDropdowns();
+      };
+
+      // Function to filter dropdown options
+      function filterFunction(dropdownId) {
+        const input =
+          document.getElementById(dropdownId).previousElementSibling;
+        const filter = input.value.toUpperCase();
+        const divs = document
+          .getElementById(dropdownId)
+          .getElementsByTagName("div");
+        for (let i = 0; i < divs.length; i++) {
+          const txtValue = divs[i].textContent || divs[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            divs[i].style.display = "";
+          } else {
+            divs[i].style.display = "none";
+          }
+        }
+      }
+
+      // Function to select an option and set the input value
+      function selectOption(value, inputId) {
+        const input = document.getElementById(inputId);
+        input.value = value;
+        input.nextElementSibling.style.display = "none";
+      }
+    </script>
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/price_rangs.js"></script>
+
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="./assets/js/jquery.scrollUp.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
